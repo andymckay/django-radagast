@@ -3,20 +3,20 @@ from django import http
 
 import jingo
 
-class Wizard(TemplateView):#FormWizard):
+class Wizard(TemplateView):
     """A wrapper around the FormWizard in Django that makes a few changes.
     It renders different templates if the request is Ajax
     """
     template_name = 'templates/radagast/starts.html'
 
     def __call__(self, request, *args, **kw):
-        print request, args, kw
+        raise NotImplementedError
 
     def get(self, request, step=''):
-        print 'get'
+        raise NotImplementedError
 
     def post(self, request, step=''):
-        print 'post'
+        raise NotImplementedError
 
     def get_context_data(self, *kw):
         return {}
