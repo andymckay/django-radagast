@@ -5,9 +5,9 @@ version = '0.3'
 readme = open(os.path.join(os.path.dirname(__file__), "readme.rst"))
 long_description = readme.read()
 
-setup(name='django-quieter-formset',
+setup(name='django-radagast',
       version=version,
-      description="Django formset that's a bit quieter",
+      description="The other wizard",
       long_description=long_description,
       classifiers=[
         'Programming Language :: Python',
@@ -16,7 +16,7 @@ setup(name='django-quieter-formset',
         'Framework :: Django',
         ],
       keywords='',
-      packages=['quieter_formset'],
+      packages=['radagast'],
       author='Mozilla',
       author_email='andym@mozilla.com',
       url='http://mozilla.com',
